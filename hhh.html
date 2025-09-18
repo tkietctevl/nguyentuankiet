@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz ABCD</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; text-align: center; }
+    #quiz-container { display: none; text-align: left; max-width: 600px; margin: auto; }
+    #start-screen { margin-top: 100px; }
+    button { padding: 10px 20px; margin-top: 20px; font-size: 16px; cursor: pointer; border-radius: 6px; border: none; background: #007BFF; color: #fff; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <div id="start-screen">
+    <h1>Chào mừng bạn đến với Quiz ABCD 🎉</h1>
+    <p>Ấn nút bên dưới để bắt đầu làm bài</p>
+    <button onclick="startQuiz()">Bắt đầu</button>
+  </div>  <div id="quiz-container">
+    <h1>Bài Quiz ABCD</h1><p><b>Câu hỏi 1:</b> 2 + 2 = ?</p>
+<label><input type="radio" name="q1">A. 3</label><br>
+<label><input type="radio" name="q1">B. 4</label><br>
+<label><input type="radio" name="q1">C. 5</label><br>
+<label><input type="radio" name="q1">D. 6</label><br>
+
+<p><b>Câu hỏi 2:</b> Thủ đô của Việt Nam là?</p>
+<label><input type="radio" name="q2">A. TP. Hồ Chí Minh</label><br>
+<label><input type="radio" name="q2">B. Đà Nẵng</label><br>
+<label><input type="radio" name="q2">C. Hà Nội</label><br>
+<label><input type="radio" name="q2">D. Hải Phòng</label><br>
+
+<p><b>Câu hỏi 3:</b> Facebook được sáng lập bởi ai?</p>
+<label><input type="radio" name="q3">A. Bill Gates</label><br>
+<label><input type="radio" name="q3">B. Mark Zuckerberg</label><br>
+<label><input type="radio" name="q3">C. Elon Musk</label><br>
+<label><input type="radio" name="q3">D. Jeff Bezos</label><br>
+
+  </div>  <script>
+    function startQuiz() {
+      document.getElementById("start-screen").style.display = "none";
+      document.getElementById("quiz-container").style.display = "block";
+    }
+  </script></body>
+</html>
