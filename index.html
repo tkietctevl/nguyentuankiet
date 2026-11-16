@@ -1,718 +1,1861 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chụp Photobooth</title>
-    <style>
-* { box-sizing: border-box; }
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="csrf-token" content="77f9fbb7246db5082e094a9e671d7abb61467d5409c12c72f62d2a578c04aa3f" />
+  <meta http-equiv="content-language" content="vi">
+  <meta name="robots" content="index, follow">
+  <title>Hệ thống đổi thẻ cào sang tiền mặt, cam kết giá tốt nhất, xử lý thẻ cào trong 5 giây , rút tiền</title>
+  <link rel="canonical" href="https://gachthefast.com/" />
+  <link rel="alternate" hreflang="vi-vn" href="https://gachthefast.com/">
+  <meta name="description" content="Nạp điện thoại, gạch thẻ, mua thẻ , nạp kim cương ff, thẻ tuần thẻ tháng , rb và nhiều game khác giá cực rẻ tại GachTheFast.com. Hệ thống gạch thẻ tự động, ổn định, hỗ trợ tất cả các nhà mạng." />
+  <meta name="keywords" content="gachthefast, gachthefast.com, gachthefast com, gachthefast chấm com, gachthefast vn, gachthefast.vn, đổi thẻ cào, gạch thẻ cào, doi the cao, gach the cao, đổi thẻ cào sang tiền mặt, gửi thẻ bán hộ, đổi thẻ cào uy tín, đổi thẻ cào chiết khấu cao, thu mua thẻ cào, đổi thẻ viettel, đổi thẻ vinaphone, đổi thẻ mobifone, đổi thẻ garena, đổi thẻ zing, đổi thẻ vcoin, đổi thẻ gate, gạch thẻ tự động 24/7, gạch thẻ 5s, nạp game giá rẻ, nạp kim cương ff, nạp kc free fire, nạp robux giá rẻ, nạp robux chính hãng, shop nạp robux uy tín, nạp quân huy liên quân, nạp fc mobile vn, nạp thẻ tuần ff, nạp thẻ tháng ff, mua thẻ cào online, mua thẻ garena chiết khấu, mua thẻ zing, nạp điện thoại giá rẻ, nạp cước điện thoại, rút ví trả sau, rút ví trả sau momo, rút ví trả sau zalopay, rút ví trả sau viettelpay, rút tiền ví trả sau phí rẻ, giao dịch trung gian, gdtg uy tín, đổi tiền nhanh, thu mua crypto, check uy tín thông tin, hoàn tiền shopee, hoàn tiền tiktok shop, quân huy">
+  <meta name="copyright" content="Copyright © 2026 GACHTHEFAST.COM All rights reserved." />
 
-:root {
-    --pink: #f85199;
-    --pink-dark: #d6136c;
-    --pink-light: #ffd8e4;
-    --pink-pale: #fff3f8;
-    --text: #4b3f47;
-}
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Hệ thống đổi thẻ cào sang tiền mặt, cam kết giá tốt nhất, xử lý thẻ cào trong 5 giây , rút tiền">
+  <meta property="og:type" content="Website">
+  <meta property="og:url" content="https://gachthefast.com/">
+  <meta property="og:image:alt" content="Nạp điện thoại, gạch thẻ, mua thẻ , nạp kim cương ff, thẻ tuần thẻ tháng , rb và nhiều game khác giá cực rẻ tại GachTheFast.com. Hệ thống gạch thẻ tự động, ổn định, hỗ trợ tất cả các nhà mạng.">
+  <meta property="og:image" content="https://gachthefast.com/storage/images/gachthefast.com/2250378973704741451_6966320f1aeec.jpg">
+  <meta property="og:description" content="Nạp điện thoại, gạch thẻ, mua thẻ , nạp kim cương ff, thẻ tuần thẻ tháng , rb và nhiều game khác giá cực rẻ tại GachTheFast.com. Hệ thống gạch thẻ tự động, ổn định, hỗ trợ tất cả các nhà mạng.">
+  <meta property="og:site_name" content="Hệ thống đổi thẻ cào sang tiền mặt, cam kết giá tốt nhất, xử lý thẻ cào trong 5 giây , rút tiền">
+  <meta property="article:section" content="Nạp điện thoại, gạch thẻ, mua thẻ , nạp kim cương ff, thẻ tuần thẻ tháng , rb và nhiều game khác giá cực rẻ tại GachTheFast.com. Hệ thống gạch thẻ tự động, ổn định, hỗ trợ tất cả các nhà mạng.">
+  <meta property="article:tag" content="gachthefast, gachthefast.com, gachthefast com, gachthefast chấm com, gachthefast vn, gachthefast.vn, đổi thẻ cào, gạch thẻ cào, doi the cao, gach the cao, đổi thẻ cào sang tiền mặt, gửi thẻ bán hộ, đổi thẻ cào uy tín, đổi thẻ cào chiết khấu cao, thu mua thẻ cào, đổi thẻ viettel, đổi thẻ vinaphone, đổi thẻ mobifone, đổi thẻ garena, đổi thẻ zing, đổi thẻ vcoin, đổi thẻ gate, gạch thẻ tự động 24/7, gạch thẻ 5s, nạp game giá rẻ, nạp kim cương ff, nạp kc free fire, nạp robux giá rẻ, nạp robux chính hãng, shop nạp robux uy tín, nạp quân huy liên quân, nạp fc mobile vn, nạp thẻ tuần ff, nạp thẻ tháng ff, mua thẻ cào online, mua thẻ garena chiết khấu, mua thẻ zing, nạp điện thoại giá rẻ, nạp cước điện thoại, rút ví trả sau, rút ví trả sau momo, rút ví trả sau zalopay, rút ví trả sau viettelpay, rút tiền ví trả sau phí rẻ, giao dịch trung gian, gdtg uy tín, đổi tiền nhanh, thu mua crypto, check uy tín thông tin, hoàn tiền shopee, hoàn tiền tiktok shop, quân huy">
 
-html, body { min-height: 100%; }
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@wmt24h">
+  <meta name="twitter:title" content="Hệ thống đổi thẻ cào sang tiền mặt, cam kết giá tốt nhất, xử lý thẻ cào trong 5 giây , rút tiền">
+  <meta name="twitter:description" content="Nạp điện thoại, gạch thẻ, mua thẻ , nạp kim cương ff, thẻ tuần thẻ tháng , rb và nhiều game khác giá cực rẻ tại GachTheFast.com. Hệ thống gạch thẻ tự động, ổn định, hỗ trợ tất cả các nhà mạng.">
+  <meta name="twitter:creator" content="@wmt24h">
+  <meta name="twitter:image:src" content="https://gachthefast.com/storage/images/gachthefast.com/2250378973704741451_6966320f1aeec.jpg">
 
-body {
-    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background:
-        radial-gradient(circle at 8% 12%, rgba(255,255,255,.95), transparent 23%),
-        radial-gradient(circle at 92% 88%, rgba(248,81,153,.17), transparent 25%),
-        linear-gradient(145deg, #ffd8e4 0%, #fff0f5 52%, #ffdeea 100%);
-    color: var(--text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    overflow: hidden;
-}
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://gachthefast.com/storage/images/gachthefast.com/1724397535_IMG_5190.jpeg" />
+  <link rel="icon" href="https://gachthefast.com/storage/images/gachthefast.com/1724397535_IMG_5190.jpeg" type="image/x-icon">
 
-body::before, body::after {
-    position: fixed;
-    z-index: 0;
-    color: rgba(214,19,108,.2);
-    pointer-events: none;
-    animation: float 5s ease-in-out infinite;
-}
-body::before {
-    content: "♡";
-    left: 7%;
-    top: 13%;
-    font-size: 70px;
-    transform: rotate(-10deg);
-}
-body::after {
-    content: "✦";
-    right: 9%;
-    bottom: 14%;
-    font-size: 44px;
-    animation-delay: -2s;
-}
 
-.card {
-    position: relative;
-    z-index: 1;
-    background: rgba(255,255,255,.94);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    padding: 28px 20px 23px;
-    border-radius: 32px;
-    text-align: center;
-    width: 90%;
-    max-width: 414px;
-    border: 1px solid rgba(255,255,255,.95);
-    box-shadow: 0 24px 60px rgba(214,19,108,.15), 0 7px 20px rgba(255,182,193,.22);
-    animation: cardIn .6s cubic-bezier(.2,.8,.2,1);
-}
+  <style>
+    :root {
+      --primary-color: #0cac49;
+      --primary-hover: #b43c3c;
+      --primary-rgb: 1, 36, 103;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://gachthefast.com/public/client/default/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://gachthefast.com/public/client/default/plugins/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
+  <link rel="stylesheet" href="https://gachthefast.com/public/client/default/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="https://gachthefast.com/public/client/default/plugins/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://gachthefast.com/public/client/default/fonts/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="https://gachthefast.com/public/client/default/css/style.css?v=1.0.1">
+  <!--<link rel="stylesheet" href="https://gachthefast.com/public/plugin/sweetalert2/sweetalert2.css"> -->
+  <script type="text/javascript" src="https://gachthefast.com/public/client/default/plugins/jquery.min.js"></script>
+  <!--<link class="main-stylesheet" href="https://gachthefast.com/public/plugin/cute-alert/style.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.css" />
+  <script src="https://cdn.jsdelivr.net/npm/simple-notify@1.0.4/dist/simple-notify.min.js"></script>
+  <!-- CoolAlert.js - Toast notification -->
+  <script src="https://gachthefast.com/public/plugin/coolalertjs/dist/coolalert.js"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="https://gachthefast.com/public/client/custom.css?v=1.6">
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "GachTheFast.Com - Đổi Thẻ Cào Thành Tiền Mặt Tự Động Chiết Khấu Tốt Nhất Việt Nam",
+    "url": "https://gachthefast.com/"
+  }
+</script>
 
-.card::before {
-    content: "♡";
-    position: absolute;
-    top: 12px;
-    right: 18px;
-    color: #f7b3cd;
-    font-size: 18px;
-    animation: pulse 2.5s ease-in-out infinite;
-}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ĐỔI THẺ CÀO SANG TIỀN MẶT CHIẾT KHẤU THẤP NHẤT VIỆT NAM",
+    "legalName": "Hệ thống đổi thẻ cào sang tiền mặt, cam kết giá tốt nhất, xử lý thẻ cào trong 5 giây , rút tiền",
+    "url": "https://gachthefast.com/",
+    "logo": "https://gachthefast.com/storage/images/gachthefast.com/2250378973704741451_6966320f1aeec.jpg",
+    "foundingDate": "2010",
+    "founders": [{
+      "@type": "Person",
+      "name": ""
+    }],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Việt nam",
+      "addressLocality": "Việt nam",
+      "addressRegion": "Việt nam",
+      "postalCode": "100000",
+      "addressCountry": "VN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "telephone": "Zalo:0869586447",
+      "email": ""
+    },
+    "sameAs": [
+      "",
+      ""
+    ]
+  }
+</script>
+    </head>
+<body>
+    
+    
+    <header id="header-m1" class="header-m1 header-sort">
+        <div class="container d-flex align-items-center flex-lg-wrap">
+            <div class="header-hamburger" id="call-navigation">
+                <span></span>
+            </div>
+            <a class="header-logo" href="https://gachthefast.com/">
+                <img src="https://gachthefast.com/storage/images/gachthefast.com/1724425755_tải xuống (4).jpg" height="40px" alt="">
+            </a>
+            <div class="header-navigation">
+                <ul class="list-unstyled mb-0">
+                    <li class="d-lg-none d-inline-block navigation-logo text-center">
+                        <a href="https://gachthefast.com/">
+                            <img src="https://gachthefast.com/storage/images/gachthefast.com/1724425755_tải xuống (4).jpg" height="40px"
+                                class="img-fluid" alt="">
+                        </a>
+                    </li>
+                                                                        <li class="d-inline-block">
+                                <a href="https://gachthefast.com/muathe">MUA THẺ</a>
+                            </li>
+                                                                                                                                                                                                                                                                                                                                                                        <li class="d-inline-block">
+                                <a href="https://gachthefast.com/doithecao">GẠCH THẺ</a>
+                            </li>
+                                                                                                                                                                                        <li class="d-inline-block  hasSub ">
+                                <a href="https://gachthefast.com/doithecao">HƯỚNG DẪN <i class="fas fa-caret-down"></i></a>
+                                <ul class="list-unstyled mb-0">
 
-h2 {
-    margin: 0;
-    color: var(--pink-dark);
-    font-size: 26px;
-    font-weight: 800;
-    letter-spacing: -.4px;
-}
+                                                                            <li class="d-block">
+                                            <a href="https://gachthefast.com/news/huong-dan-su-dung.html">HƯỚNG DẪN GẠCH THẺ VÀ RÚT TIỀN</a>
+                                        </li>
 
-.title-sub {
-    margin: 7px 0 0;
-    color: #8a7d85;
+                                                                            <li class="d-block">
+                                            <a href="https://zalo.me/84869586447">HỖ TRỢ QUA ZALO</a>
+                                        </li>
+
+                                                                    </ul>
+                                <span class="sub-icon">+</span>
+                            </li>
+                                                                                                                                                                                        <li class="d-inline-block  hasSub ">
+                                <a href="https://gachthefast.com/wallet/withdraw">RÚT TIỀN <i class="fas fa-caret-down"></i></a>
+                                <ul class="list-unstyled mb-0">
+
+                                                                            <li class="d-block">
+                                            <a href="https://gachthefast.com/doithecao">GỬI THẺ BÁN HỘ</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://gachthefast.com/wallet/withdraw">Rút tiền về ATM/VÍ ĐIỆN TỬ</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://gachthefast.com/localbank/list">Thêm Tài Khoản Rút Tiền</a>
+                                        </li>
+
+                                                                    </ul>
+                                <span class="sub-icon">+</span>
+                            </li>
+                                                                                                                                                                                                                                    <li class="d-inline-block">
+                                <a href="https://gachthefast.com/wallet/transfer">CHUYỂN TIỀN</a>
+                            </li>
+                                                                                                <li class="d-inline-block">
+                                <a href="https://gachthefast.com/recharge/nap-game">NẠP GAME GARENA</a>
+                            </li>
+                                                                                                                                                                                                                                    <li class="d-inline-block">
+                                <a href="https://gachthefast.com/recharge/nap-game-zing">NẠP GAME VNG</a>
+                            </li>
+                                                                                                                                            <li class="d-inline-block">
+                                <a href="https://gachthefast.com/recharge/nap-dien-thoai">NẠP ĐIỆN THOẠI</a>
+                            </li>
+                                                                                                                                            <li class="d-inline-block">
+                                <a href="https://gachthefast.com/security/list">BẢO MẬT</a>
+                            </li>
+                                                                                                                                            <li class="d-inline-block  hasSub ">
+                                <a href="https://gachthefast.com/#">LỊCH SỬ <i class="fas fa-caret-down"></i></a>
+                                <ul class="list-unstyled mb-0">
+
+                                                                            <li class="d-block">
+                                            <a href="https://gachthefast.com/wallet/history">LỊCH SỬ SỐ DƯ</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://gachthefast.com/history/recharge">LỊCH SỬ NẠP GAME/NẠP ĐT</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://gachthefast.com/history/doithecao">LỊCH SỬ GẠCH THẺ</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://gachthefast.com/history/softcard">LỊCH SỬ MUA THẺ</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://gachthefast.com/wallet/withdraw">LỊCH SỬ RÚT TIỀN</a>
+                                        </li>
+
+                                                                    </ul>
+                                <span class="sub-icon">+</span>
+                            </li>
+                                                                                                <li class="d-inline-block">
+                                <a href="https://gachthefast.com/merchant/list">KẾT NỐI API</a>
+                            </li>
+                                                                                                <li class="d-inline-block">
+                                <a href="https://gachthefast.com/account/logout">ĐĂNG XUẤT</a>
+                            </li>
+                                                                                                <li class="d-inline-block  hasSub ">
+                                <a href="https://gachthefast.com">AFFILIATE <i class="fas fa-caret-down"></i></a>
+                                <ul class="list-unstyled mb-0">
+
+                                                                            <li class="d-block">
+                                            <a href="https://hoantienaz.com/aff/MHUC16TB">MUA SẮM NHẬN TIỀN HOÀN TỪ TIKTOK , SHOPEE</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://gachthefast.com/affiliate/referral">GIỚI THIỆU BẠN BÈ</a>
+                                        </li>
+
+                                                                    </ul>
+                                <span class="sub-icon">+</span>
+                            </li>
+                                                                                                <li class="d-inline-block  hasSub ">
+                                <a href="https://gachthefast.com/doithecao">THÔNG BÁO <i class="fas fa-caret-down"></i></a>
+                                <ul class="list-unstyled mb-0">
+
+                                                                            <li class="d-block">
+                                            <a href="https://zalo.me/g/2c2h4dbmz30evi947whs">NHÓM ZALO</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://discord.gg/ETd8Uk5xu8">NHÓM DISCORD</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://www.tiktok.com/@diendongne?is_from_webapp=1&amp;sender_device=pc">KÊNH TIKTOK</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://www.youtube.com/@gachthefastchamcom">KÊNH YOUTUBE</a>
+                                        </li>
+
+                                                                            <li class="d-block">
+                                            <a href="https://docs.google.com/document/d/1wVjg9G-eIqEQpaeCgR7fg2oz3Krm02PjcGPc8yPde54/edit?hl=vi&amp;tab=t.0">Gachthefast.com bị bên khác chơi xấu</a>
+                                        </li>
+
+                                                                    </ul>
+                                <span class="sub-icon">+</span>
+                            </li>
+                                                                                                <li class="d-inline-block">
+                                <a href="https://yueadmin.vn/">Yueadmin.vn</a>
+                            </li>
+                                                                                                <li class="d-inline-block">
+                                <a href="https://gachthefast.com/recharge/diem-danh">ĐIỂM DANH</a>
+                            </li>
+                                            
+
+                </ul>
+            </div>
+                            <div class="header-user">
+                    <div class="header-nologin">
+                        <a href="https://gachthefast.com/account/register" class="btn btn-small btn-register">
+                            <i class="fas fa-user"></i> Đăng ký                        </a>
+                        <a href="https://gachthefast.com/account/login" class="btn btn-small btn-login">
+                            <i class="fas fa-lock"></i> Đăng nhập                        </a>
+                    </div>
+                </div>
+                <div class="header-usermb">
+                    <button type="button" class="btn" id="call-userMB">
+                        <i class="fas fa-user"></i>
+                        Tài khoản </button>
+                    <div class="header-usermb_list">
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-inline-block text-center header-usermb_list__logo">
+                                <a href="https://gachthefast.com/">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/1724425755_tải xuống (4).jpg"
+                                        height="40px" alt="Doi the cao">
+                                </a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="https://gachthefast.com/account/register">
+                                    <i class="fa fa-angle-right"></i> <strong>Đăng ký</strong>
+                                </a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="https://gachthefast.com/account/login">
+                                    <i class="fa fa-angle-right"></i> <strong>Đăng nhập</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            
+        </div>
+        <div class="header-overlay" id="header-overlay"></div>
+    </header><div id="main" class="main">
+
+
+            <div class="section-banner">
+            <div class="swiper" id="slideBanner">
+                <div class="swiper-wrapper h-auto">
+                                            <div class="swiper-slide h-auto" style="--color-slider: #107f13, #107f13">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 order-2 order-md-1">
+                                        <h3 class="section-banner_title">
+                                            Mua Sắm Shopee, Tiktok Shop Nhận Lại Tiền Hoàn Dễ Dàng                                        </h3>
+                                                                                    <p class="section-banner_desc">
+                                                Dán link sản phẩm bất kỳ từ Shopee hoặc TikTok Shop để lấy link mua hàng, mở link mua hàng được hệ thống tạo sau đó mua hàng như bình thường, tiền hoàn sẽ được cộng vào ví từ 3 - 7 ngày tính từ lúc đơn hàng được giao thành công!                                            </p>
+                                                                                                                            <div class="section-banner_button">
+                                                <a href="https://hoantienaz.com/aff/MHUC16TB" class="btn btn-light font-weight-bold px-4">
+                                                    ĐĂNG KÝ NGAY                                                </a>
+                                            </div>
+                                                                            </div>
+                                    <div class="col-md-6 order-1 order-md-2">
+                                        <div class="section-banner_image">
+                                            <a href="#" class="d-inline-block">
+                                                <img src="https://gachthefast.com/storage/images/gachthefast.com/2aOboQf3MYfitWXzc0dL0BwpDoHhQ5gwCGMukcnw_6a379dd5dc618.jpg" alt="Mua Sắm Shopee, Tiktok Shop Nhận Lại Tiền Hoàn Dễ Dàng">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+                <div class="slide-button-prev"><i class="fal fa-angle-left"></i></div>
+                <div class="slide-button-next"><i class="fal fa-angle-right"></i></div>
+            </div>
+        </div>
+    
+                <div class="section-gap">
+            <div class="container">
+                <div class="description mb-3">
+                    <div class="text-center title">
+                                            </div>
+                    <!-- THANH HƯỚNG DẪN MUA THẺ & ZALO - CHUẨN PC & MOBILE -->
+<style type="text/css">/* KHUNG TỔNG BANNER */
+    .gtf-yue-box {
+        background: #0042ba;
+        border-radius: 12px;
+        padding: 14px 16px;
+        margin-bottom: 15px;
+        color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        box-shadow: 0 4px 12px rgba(0, 66, 186, 0.2);
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .gtf-yue-box * {
+        box-sizing: border-box !important;
+    }
+    
+    /* HEADER: NẰM HÀNG NGANG */
+    .gtf-yue-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+    .gtf-yue-info {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .gtf-yue-title {
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .gtf-yue-sub {
+        font-size: 11px;
+        color: #d0e1ff;
+        line-height: 1.3;
+    }
+    .gtf-yue-zalo-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        color: #0042ba !important;
+        font-weight: 700;
+        font-size: 12px;
+        padding: 7px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    /* 3 BƯỚC HƯỚNG DẪN DẠNG PILL */
+    .gtf-yue-steps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: flex-start;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        padding-top: 10px;
+    }
+    .gtf-yue-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .gtf-yue-pill.step-1 { background: #e6f9f0; color: #0d8a50; }
+    .gtf-yue-pill.step-2 { background: #eef2ff; color: #4f46e5; }
+    .gtf-yue-pill.step-3 { background: #fff8e6; color: #d97706; }
+
+    /* TỐI ƯU GỌN GÀNG TRÊN MOBILE (< 768px) - HIỂN THỊ ĐỦ THÔNG TIN */
+    @media (max-width: 768px) {
+        .gtf-yue-box {
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .gtf-yue-header {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .gtf-yue-title {
+            font-size: 12.5px;
+        }
+        .gtf-yue-sub {
+            display: block !important; /* Đảm bảo mobile vẫn thấy chữ phụ hướng dẫn */
+            font-size: 10px;
+        }
+        .gtf-yue-zalo-btn {
+            width: 100%;
+            padding: 6px 10px;
+            font-size: 11px;
+            text-align: center;
+        }
+        .gtf-yue-steps {
+            flex-direction: column;
+            gap: 6px;
+        }
+        .gtf-yue-pill {
+            width: 100%;
+            justify-content: flex-start;
+            padding: 5px 10px;
+            font-size: 10.5px;
+            border-radius: 6px;
+        }
+    }
+</style>
+<style class="darkreader darkreader--sync" media="screen" type="text/css">
+</style>
+<div class="gtf-yue-box"><!-- HEADER: ZALO HỖ TRỢ -->
+<div class="gtf-yue-header">
+<div class="gtf-yue-info">
+<div class="gtf-yue-title">📩 Zalo Hỗ Trợ:<span data-darkreader-inline-color="" style="color: rgb(231, 76, 60); --darkreader-inline-color: var(--darkreader-text-e74c3c, #e95849);"></span> <a data-darkreader-inline-color="" href="https://zalo.me/0869586447" style="color: rgb(255, 255, 0); text-decoration: underline; --darkreader-inline-color: var(--darkreader-text-ffff00, #ffff1a);" target="_blank"><span data-darkreader-inline-color="" style="color: rgb(231, 76, 60); --darkreader-inline-color: var(--darkreader-text-e74c3c, #e95849);">0869.586.447</span></a></div>
+
+<div class="gtf-yue-sub">(Mở tính năng Chuyển Khoản / Gặp lỗi / Hết thẻ vui lòng nhắn Zalo)</div>
+</div>
+<a class="gtf-yue-zalo-btn" href="https://zalo.me/0869586447" target="_blank">CHAT ZALO CSKH ➔</a></div>
+<!-- CÁC BƯỚC HƯỚNG DẪN -->
+
+<div class="gtf-yue-steps">
+<div class="gtf-yue-pill step-1">🟢 Bước 1: Chọn thẻ &amp; mệnh giá</div>
+
+<div class="gtf-yue-pill step-2">🔵 Bước 2: Chọn phương thức thanh toán</div>
+
+<div class="gtf-yue-pill step-3">🟡 Bước 3: Nhận thẻ tự động ngay lập tức</div>
+</div>
+</div>
+                </div>
+                <div class="row row15 rowmb10">
+
+                                            <div class="col-xl-2 col-md-3 col-4">
+                            <a href="https://gachthefast.com/muathe" class="card-product card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/viettelts196050214.png" alt="" style="max-height: 80px">
+                                </div>
+                                <div class="card-title">
+                                    Thẻ Viettel                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-xl-2 col-md-3 col-4">
+                            <a href="https://gachthefast.com/muathe" class="card-product card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/Thẻ Vinaphone417067050.png" alt="" style="max-height: 80px">
+                                </div>
+                                <div class="card-title">
+                                    Thẻ Vinaphone                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-xl-2 col-md-3 col-4">
+                            <a href="https://gachthefast.com/muathe" class="card-product card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/Thẻ Mobifone790988538.png" alt="" style="max-height: 80px">
+                                </div>
+                                <div class="card-title">
+                                    Thẻ Mobifone                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-xl-2 col-md-3 col-4">
+                            <a href="https://gachthefast.com/muathe" class="card-product card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/Thẻ Vietnamobile508098660.png" alt="" style="max-height: 80px">
+                                </div>
+                                <div class="card-title">
+                                    Thẻ Vietnamobile                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-xl-2 col-md-3 col-4">
+                            <a href="https://gachthefast.com/muathe" class="card-product card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/GARENAGIRDOITHE1S1_69fc8caf5ff55.png" alt="" style="max-height: 80px">
+                                </div>
+                                <div class="card-title">
+                                    Thẻ Garena                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-xl-2 col-md-3 col-4">
+                            <a href="https://gachthefast.com/muathe" class="card-product card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/Thẻ Zing329297401.png" alt="" style="max-height: 80px">
+                                </div>
+                                <div class="card-title">
+                                    Thẻ Zing                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-xl-2 col-md-3 col-4">
+                            <a href="https://gachthefast.com/muathe" class="card-product card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/vcoin343322922.png" alt="" style="max-height: 80px">
+                                </div>
+                                <div class="card-title">
+                                    Thẻ Vcoin                                </div>
+                            </a>
+                        </div>
+                                            <div class="col-xl-2 col-md-3 col-4">
+                            <a href="https://gachthefast.com/muathe" class="card-product card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/Thẻ Scoin406452242.png" alt="" style="max-height: 80px">
+                                </div>
+                                <div class="card-title">
+                                    Thẻ Scoin                                </div>
+                            </a>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+            <div class="section-gap">
+            <div class="container">
+                <div class="description mb-3">
+                    <div class="text-center title">
+                        Sản phẩm dịch vụ                    </div>
+                    <p><span style="color:#e74c3c"><br />
+<em><strong>Có api kết nối đổi thẻ chính xác và bảo mật, cam kết không làm chậm, lag web đối tác, xử lý thẻ trong vài giây</strong></em></span></p>
+                </div>
+                <div class="row rowmb10 row15 row-cols-xl-8 row-cols-lg-6 row-cols-md-4 row-cols-3">
+                    
+                        <div class="col">
+                            <a href="https://gachthefast.com/recharge/nap-game-zing" class="card-topup card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/Thẻ Zing329297401.png" alt="NẠP GAME VNG">
+                                </div>
+                                <div class="card-title">
+                                    NẠP GAME VNG                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="col">
+                            <a href="https://gachthefast.com/recharge/nap-dien-thoai" class="card-topup card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/1724427124_muathe.jpg" alt="NẠP ĐIỆN THOẠI">
+                                </div>
+                                <div class="card-title">
+                                    NẠP ĐIỆN THOẠI                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="col">
+                            <a href="https://gachthefast.com/recharge/diem-danh" class="card-topup card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/2250378973704741451_6966320f1aeec.jpg" alt="Điểm danh">
+                                </div>
+                                <div class="card-title">
+                                    Điểm danh                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="col">
+                            <a href="https://gachthefast.com/recharge/nap-game" class="card-topup card">
+                                <div class="card-image">
+                                    <img src="https://gachthefast.com/storage/images/gachthefast.com/sonhanh435432766.png" alt="NẠP GAME GARENA">
+                                </div>
+                                <div class="card-title">
+                                    NẠP GAME GARENA                                </div>
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    
+            <div class="section-gap overflow-hidden">
+            <div class="container">
+                <div class="description mb-3">
+                    <div class="text-center title">
+                        TIN TỨC                    </div>
+                    <p><strong>Tin tức mới</strong></p>
+                </div>
+                <div class="row row25 rowmb15">
+                                            <div class="col-xl-2 col-md-3 col-sm-3 col-6">
+                            <div class="article-item article-item_noshadow">
+                                <div class="article-item_header">
+                                    <a href="https://gachthefast.com/news/dieu-khoan-su-dung.html">
+                                        <img src="https://gachthefast.com/storage/images/gachthefast.com/2250378973704741451_6966320f1aeec.jpg" alt="Điều khoản sử dụng">
+                                    </a>
+                                </div>
+                                <div class="article-item_body">
+                                    <a href="https://gachthefast.com/news/dieu-khoan-su-dung.html">
+                                        Điều khoản sử dụng                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-xl-2 col-md-3 col-sm-3 col-6">
+                            <div class="article-item article-item_noshadow">
+                                <div class="article-item_header">
+                                    <a href="https://gachthefast.com/news/huong-dan-su-dung.html">
+                                        <img src="https://gachthefast.com/storage/images/gachthefast.com/gtf/225037897370474145_6a7066b509ccc.jpg" alt="Hướng dẫn sử dụng">
+                                    </a>
+                                </div>
+                                <div class="article-item_body">
+                                    <a href="https://gachthefast.com/news/huong-dan-su-dung.html">
+                                        Hướng dẫn sử dụng                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+
+    
+        <style>
+            /***** Custom box-why*****/
+            #box-why {
+                position: relative;
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+
+            #box-why,
+            #box-news {
+                margin: 30px auto;
+            }
+
+            .box-why {
+                overflow: hidden;
+                margin: 20px 0;
+                line-height: 150%;
+                display: block;
+                text-align: center;
+                position: relative;
+                background-color: #fff;
+                box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2);
+                border-radius: 10px;
+            }
+
+            .box-why-wrap {
+                inset: 2px;
+                padding: 15px;
+                z-index: 1;
+                position: relative;
+                background-color: #fff;
+                border-radius: 10px;
+                width: calc(100% - 4px);
+                margin-bottom: 4px;
+            }
+
+            .box-why::before,
+            .box-why::after {
+                content: '';
+                z-index: 0;
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 100%;
+                height: 100%;
+                transform-origin: bottom right;
+                background: linear-gradient(0deg, transparent, var(--primary-color), var(--primary-color));
+                animation: animate 6s linear infinite;
+            }
+
+            .box-why::after {
+                animation-delay: -3s;
+            }
+
+            @keyframes animate {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .box-why.box-staff {
+                padding: 0;
+            }
+
+            .box-why img {
+                height: 120px;
+                margin-top: 5px;
+            }
+
+            .box-why:not(.box-staff) img {
+                transition: transform .5s ease-in-out;
+            }
+
+            .box-why .title {
+                display: block;
+                text-transform: uppercase;
+                margin: 10px 0 0;
+                font-size: 1.1rem;
+                font-weight: bold;
+                min-height: 43px;
+                color: #056bbf;
+            }
+
+            .box-why .summary {
+                display: block;
+                text-align: center;
+            }
+
+
+
+            @keyframes moveSlideshow1 {
+                0% {
+                    transform: translateX(0)
+                }
+
+                to {
+                    transform: translateX(-1386px)
+                }
+            }
+
+            .customer-slide {
+                animation: moveSlideshow1 10s linear infinite;
+                display: flex;
+                width: 2772px;
+            }
+
+            .customer-item {
+                border: 1px solid #eee;
+                background-color: #fff;
+                height: 80px;
+                width: 120px;
+                position: relative;
+                margin: 0 10px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .owl-item .customer-item {
+                margin: 0;
+                width: 100%;
+            }
+
+            .customer-item img {
+                max-width: 100%;
+                max-height: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: auto !important;
+                border: 8px solid #fff;
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out;
+                -ms-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+            }
+
+            .customer-item img:hover {
+                -moz-transform: rotateY(360deg);
+                -o-transform: rotateY(360deg);
+                -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+                -webkit-transition: all 1s ease-in-out;
+                -moz-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+
+            /***** End Custom box-why*****/
+        </style>
+
+        <div class="section-gap">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="box-why ">
+                            <div class="box-why-wrap">
+
+                                <h3 class="title text-primary">1. Đăng ký</h3>
+                                <div class="summary">
+                                    <p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Để sử dụng được dịch vụ đổi thẻ uy tín, bạn cần phải đăng ký tài khoản trên website. Nhập các thông tin sau : Số điện thoại đang dùng, mật khẩu, họ và tên , email</span></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="box-why ">
+                            <div class="box-why-wrap">
+
+                                <h3 class="title text-primary">2. Đổi thẻ cào thành tiền</h3>
+                                <div class="summary">
+                                    <p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Bạn chọn mục " Gạch thẻ" và nhập thông tin: loại thẻ, mệnh giá, mã thẻ, seri. Sau đó hệ thống sẽ tiếp nhận và xử lý, nếu thẻ đúng bạn sẽ được cộng tiền vào tài khoản.</span></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="box-why ">
+                            <div class="box-why-wrap">
+
+                                <h3 class="title text-primary">3. Rút tiền</h3>
+                                <div class="summary">
+                                    <p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Để rút tiền về đầu tiên bạn phải thêm " ngân hàng " của mình. Bạn hãy vào mục " tài khoản ngân hàng " và điền các thông tin. Sau đó để rút tiền bạn click vào mục " Rút Tiền "</span></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+            <div class="section-gap">
+            <div class="container">
+                <div id="box-customer">
+                    <p class="bold h4 text-left"> Đối Tác Thanh Toán </p>
+                    <div class="box-customer-wrap w-100 overflow-hidden">
+                        <div class="customer-slide">
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/8.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/6.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/5.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/1.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/2.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/3.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/group-47755-1677638877.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/group-47757-1677638866.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/group-47762-1677638833.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/MoMo_Logo.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/vt1.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/vina.jpg">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/mobi.jpg">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/vnmb.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/zing1.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/vcoin.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/gate.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/garena.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/e9-pay.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/group-47761-1677638838.png">
+                            </div>
+                            <div class="customer-item">
+                                <img src="https://gachthefast.com/public/client/default/image/group-47758-1677638860.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+
+
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        function addCommas(nStr) {
+            nStr += '';
+            let x = nStr.split('.');
+            let x1 = x[0];
+            let x2 = x.length > 1 ? '.' + x[1] : '';
+            let rgx = /(\d+)(\d{3})/;
+            while (rgx.test(x1)) {
+                x1 = x1.replace(rgx, '$1' + ',' + '$2');
+            }
+            return x1 + x2;
+        }
+
+        function updateAmountOptions(telco, row) {
+            let data = {"VIETTEL":{"537":{"10000":8049,"20000":16099,"30000":24149,"50000":43500,"100000":87000,"200000":174000,"300000":261000,"500000":422500,"1000000":845000},"539":{"10000":8049,"20000":16099,"30000":24149,"50000":43500,"100000":87000,"200000":174000,"300000":261000,"500000":422500,"1000000":845000},"541":{"10000":8049,"20000":16099,"30000":24149,"50000":43500,"100000":87000,"200000":174000,"300000":261000,"500000":422500,"1000000":845000},"1070":{"10000":8049,"20000":16099,"30000":24149,"50000":43500,"100000":87000,"200000":174000,"300000":261000,"1000000":845000,"500000":422500},"1138":{"10000":8049,"20000":16099,"30000":24149,"50000":43500,"100000":87000,"200000":174000,"300000":261000,"500000":422500,"1000000":845000}},"VINAPHONE":{"537":{"10000":8350,"20000":17200,"30000":25800,"50000":44250,"100000":90500,"200000":183000,"300000":274500,"500000":457500},"539":{"10000":8300,"20000":17100,"30000":25650,"50000":44000,"100000":90000,"200000":182000,"300000":273000,"500000":455000},"541":{"10000":8300,"20000":17100,"30000":25650,"50000":44000,"100000":90000,"200000":182000,"300000":273000,"500000":455000},"1070":{"10000":8300,"20000":17100,"30000":25650,"50000":44000,"100000":90000,"200000":182000,"300000":273000,"500000":455000},"1138":{"10000":8300,"20000":17100,"30000":25650,"100000":90000,"50000":44000,"300000":273000,"200000":182000,"500000":455000}},"MOBIFONE":{"537":{"10000":8250,"20000":16500,"30000":24750,"50000":41250,"100000":82500,"200000":165000,"300000":250500,"500000":417500},"539":{"10000":8250,"20000":16500,"30000":24750,"50000":41250,"100000":82500,"200000":165000,"300000":250500,"500000":417500},"541":{"10000":8250,"20000":16500,"30000":24750,"50000":41250,"100000":82500,"200000":165000,"300000":250500,"500000":417500},"1070":{"10000":8250,"20000":16500,"30000":24750,"50000":41250,"100000":82500,"200000":165000,"300000":250500,"500000":417500},"1138":{"10000":8250,"20000":16500,"30000":24750,"50000":41250,"100000":82500,"300000":250500,"200000":165000,"500000":417500}},"VNMOBI":{"537":{"10000":-49,"20000":-99,"50000":-249,"100000":-499,"200000":-999,"500000":-2499},"539":{"10000":-49,"20000":-99,"50000":-249,"100000":-499,"200000":-999,"500000":-2499},"541":{"10000":-49,"20000":-99,"50000":-249,"100000":-499,"200000":-999,"500000":-2499}},"ZING":{"537":{"10000":8680,"20000":17360,"50000":43400,"100000":86800,"200000":173600,"500000":434000,"1000000":868000},"539":{"10000":8680,"20000":17360,"50000":43400,"100000":86800,"200000":173600,"500000":434000,"1000000":868000},"541":{"10000":8680,"20000":17360,"50000":43400,"100000":86800,"200000":173600,"500000":434000,"1000000":868000},"1070":{"10000":8680,"20000":17360,"100000":86800,"50000":43400,"200000":173600,"500000":434000,"1000000":868000},"1138":{"10000":8680,"20000":17360,"50000":43400,"100000":86800,"200000":173600,"500000":434000,"1000000":868000}},"GATE":{"537":{"10000":8950,"20000":17900,"50000":44750,"100000":89500,"200000":179000,"500000":447500,"1000000":895000,"5000000":4475000,"10000000":8950000},"539":{"10000":8950,"20000":17900,"50000":44750,"100000":89500,"200000":179000,"500000":447500,"1000000":895000,"5000000":4475000,"10000000":8950000},"541":{"10000":8950,"20000":17900,"50000":44750,"100000":89500,"200000":179000,"500000":447500,"1000000":895000,"5000000":4475000,"10000000":8950000}},"GARENA":{"537":{"20000":16900,"50000":42250,"100000":84500,"200000":169000,"500000":422500,"10000":8450},"539":{"20000":17100,"50000":42750,"100000":85500,"200000":171000,"500000":427500,"10000":8550},"541":{"20000":17100,"50000":42750,"100000":85500,"200000":171000,"500000":427500,"10000":8550},"1070":{"20000":17100,"50000":42750,"100000":85500,"200000":171000,"500000":427500,"10000":8550},"1138":{"20000":17100,"50000":42750,"100000":85500,"200000":171000,"500000":427500,"10000":8550}},"VCOIN":{"537":{"10000":8550,"20000":17100,"50000":42250,"100000":84500,"200000":169000,"300000":253500,"500000":415000,"1000000":830000,"2000000":1630000,"5000000":4024999,"10000000":7850000},"541":{"10000":8550,"20000":17100,"50000":42250,"100000":84500,"200000":169000,"300000":253500,"500000":415000,"1000000":830000,"2000000":1630000,"5000000":4024999,"10000000":7850000},"539":{"10000":8550,"20000":17100,"50000":42250,"100000":84500,"200000":169000,"300000":253500,"500000":415000,"1000000":830000,"2000000":1630000,"5000000":4024999,"10000000":7850000},"1070":{"10000":8550,"20000":17100,"50000":42250,"100000":84500,"200000":169000,"300000":253500,"500000":415000,"1000000":830000,"2000000":1630000,"5000000":4024999,"10000000":7850000},"1138":{"10000":8550,"20000":17100,"50000":42250,"100000":84500,"200000":169000,"300000":253500,"500000":415000,"1000000":830000,"2000000":1630000,"5000000":4024999,"10000000":7850000}},"APPOTA":{"539":{"50000":42500,"100000":85000,"200000":170000,"500000":425000,"1000000":885000,"2000000":1770000,"5000000":4425000},"537":{"50000":42500,"100000":85000,"200000":170000,"500000":425000,"1000000":885000,"2000000":1770000,"5000000":4425000},"541":{"50000":42500,"100000":85000,"200000":170000,"500000":425000,"1000000":885000,"2000000":1770000,"5000000":4425000},"1070":{"50000":42500,"100000":85000,"200000":170000,"500000":425000,"1000000":885000,"2000000":1770000,"5000000":4425000}},"SCOIN":{"537":{"10000":7350,"50000":36750,"20000":14700,"100000":73500,"200000":147000,"300000":220500,"500000":367500},"539":{"500000":367500,"300000":220500,"200000":147000,"100000":73500,"50000":36750,"20000":14700,"10000":7350},"541":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"300000":220500,"500000":367500},"1070":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"300000":220500,"500000":367500},"1138":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"300000":220500,"500000":367500}},"GARENCHAM":{"541":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000},"1070":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000},"1138":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000},"537":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000},"539":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000}},"GARENATUXU":{"541":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"500000":367500},"1070":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"500000":367500},"1138":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"500000":367500},"537":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"500000":367500},"539":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"500000":367500}},"ZINGCHAM":{"541":{"20000":17900,"50000":44750,"100000":89500},"1070":{"20000":17900,"50000":44750,"100000":89500},"1138":{"100000":89500,"50000":44750,"20000":17900},"537":{"100000":89500,"50000":44750,"20000":17900},"539":{"20000":17900,"50000":44750,"100000":89500}},"GARENACHAM":{"541":{"10000":8900,"20000":17600,"50000":44000,"100000":88000,"200000":176000,"500000":440000},"1070":{"20000":17600,"10000":8800,"500000":440000,"200000":176000,"100000":88000,"50000":44000},"1138":{"10000":8800,"20000":17600,"50000":44000,"100000":88000,"200000":176000,"500000":440000},"539":{"20000":17600,"10000":8800,"500000":440000,"200000":176000,"50000":44000,"100000":88000}}};
+            let your_group = 541;
+            let defaultAmount = $('.defaultAmount[data-telco="' + telco + '"]').data('amount');
+            let lsAmount = defaultAmount.split(',');
+            let option = '<option value="">--- Chọn mệnh giá ---</option>';
+            let note = "- Nhận ";
+
+            $.each(lsAmount, function(index, value) {
+                if (data[telco] && data[telco][your_group] && typeof data[telco][your_group][value] === 'number') {
+                    let receive_amount = data[telco][your_group][value];
+                    option += '<option value="' + value + '">' + addCommas(value) + ' đ ' + note + addCommas(receive_amount) + 'đ</option>';
+                } else {
+                    option += '<option value="' + value + '">' + addCommas(value) + ' đ</option>';
+                }
+            });
+
+            $(`.charging-amount[data-row="${row}"]`).html(option);
+        }
+
+        function updateAllForms() {
+            let defaultTelco = $('#default_telco').val();
+            let defaultAmount = $('#default_amount').val();
+            let defaultAmountOptions = $('#default_amount').html();
+
+            $('.telco').each(function() {
+                let row = $(this).data('row');
+                $(this).val(defaultTelco).trigger('change');
+                $(`.charging-amount[data-row="${row}"]`).html(defaultAmountOptions).val(defaultAmount);
+            });
+        }
+
+        $('#default_telco').on('change', function() {
+            let defaultTelco = $(this).val();
+            let defaultAmount = $('.defaultAmount[data-telco="' + defaultTelco + '"]').data('amount');
+            let lsAmount = defaultAmount.split(',');
+            let option = '<option value="">--- Mệnh giá mặc định ---</option>';
+            let data = {"VIETTEL":{"537":{"10000":8049,"20000":16099,"30000":24149,"50000":43500,"100000":87000,"200000":174000,"300000":261000,"500000":422500,"1000000":845000},"539":{"10000":8049,"20000":16099,"30000":24149,"50000":43500,"100000":87000,"200000":174000,"300000":261000,"500000":422500,"1000000":845000},"541":{"10000":8049,"20000":16099,"30000":24149,"50000":43500,"100000":87000,"200000":174000,"300000":261000,"500000":422500,"1000000":845000},"1070":{"10000":8049,"20000":16099,"30000":24149,"50000":43500,"100000":87000,"200000":174000,"300000":261000,"1000000":845000,"500000":422500},"1138":{"10000":8049,"20000":16099,"30000":24149,"50000":43500,"100000":87000,"200000":174000,"300000":261000,"500000":422500,"1000000":845000}},"VINAPHONE":{"537":{"10000":8350,"20000":17200,"30000":25800,"50000":44250,"100000":90500,"200000":183000,"300000":274500,"500000":457500},"539":{"10000":8300,"20000":17100,"30000":25650,"50000":44000,"100000":90000,"200000":182000,"300000":273000,"500000":455000},"541":{"10000":8300,"20000":17100,"30000":25650,"50000":44000,"100000":90000,"200000":182000,"300000":273000,"500000":455000},"1070":{"10000":8300,"20000":17100,"30000":25650,"50000":44000,"100000":90000,"200000":182000,"300000":273000,"500000":455000},"1138":{"10000":8300,"20000":17100,"30000":25650,"100000":90000,"50000":44000,"300000":273000,"200000":182000,"500000":455000}},"MOBIFONE":{"537":{"10000":8250,"20000":16500,"30000":24750,"50000":41250,"100000":82500,"200000":165000,"300000":250500,"500000":417500},"539":{"10000":8250,"20000":16500,"30000":24750,"50000":41250,"100000":82500,"200000":165000,"300000":250500,"500000":417500},"541":{"10000":8250,"20000":16500,"30000":24750,"50000":41250,"100000":82500,"200000":165000,"300000":250500,"500000":417500},"1070":{"10000":8250,"20000":16500,"30000":24750,"50000":41250,"100000":82500,"200000":165000,"300000":250500,"500000":417500},"1138":{"10000":8250,"20000":16500,"30000":24750,"50000":41250,"100000":82500,"300000":250500,"200000":165000,"500000":417500}},"VNMOBI":{"537":{"10000":-49,"20000":-99,"50000":-249,"100000":-499,"200000":-999,"500000":-2499},"539":{"10000":-49,"20000":-99,"50000":-249,"100000":-499,"200000":-999,"500000":-2499},"541":{"10000":-49,"20000":-99,"50000":-249,"100000":-499,"200000":-999,"500000":-2499}},"ZING":{"537":{"10000":8680,"20000":17360,"50000":43400,"100000":86800,"200000":173600,"500000":434000,"1000000":868000},"539":{"10000":8680,"20000":17360,"50000":43400,"100000":86800,"200000":173600,"500000":434000,"1000000":868000},"541":{"10000":8680,"20000":17360,"50000":43400,"100000":86800,"200000":173600,"500000":434000,"1000000":868000},"1070":{"10000":8680,"20000":17360,"100000":86800,"50000":43400,"200000":173600,"500000":434000,"1000000":868000},"1138":{"10000":8680,"20000":17360,"50000":43400,"100000":86800,"200000":173600,"500000":434000,"1000000":868000}},"GATE":{"537":{"10000":8950,"20000":17900,"50000":44750,"100000":89500,"200000":179000,"500000":447500,"1000000":895000,"5000000":4475000,"10000000":8950000},"539":{"10000":8950,"20000":17900,"50000":44750,"100000":89500,"200000":179000,"500000":447500,"1000000":895000,"5000000":4475000,"10000000":8950000},"541":{"10000":8950,"20000":17900,"50000":44750,"100000":89500,"200000":179000,"500000":447500,"1000000":895000,"5000000":4475000,"10000000":8950000}},"GARENA":{"537":{"20000":16900,"50000":42250,"100000":84500,"200000":169000,"500000":422500,"10000":8450},"539":{"20000":17100,"50000":42750,"100000":85500,"200000":171000,"500000":427500,"10000":8550},"541":{"20000":17100,"50000":42750,"100000":85500,"200000":171000,"500000":427500,"10000":8550},"1070":{"20000":17100,"50000":42750,"100000":85500,"200000":171000,"500000":427500,"10000":8550},"1138":{"20000":17100,"50000":42750,"100000":85500,"200000":171000,"500000":427500,"10000":8550}},"VCOIN":{"537":{"10000":8550,"20000":17100,"50000":42250,"100000":84500,"200000":169000,"300000":253500,"500000":415000,"1000000":830000,"2000000":1630000,"5000000":4024999,"10000000":7850000},"541":{"10000":8550,"20000":17100,"50000":42250,"100000":84500,"200000":169000,"300000":253500,"500000":415000,"1000000":830000,"2000000":1630000,"5000000":4024999,"10000000":7850000},"539":{"10000":8550,"20000":17100,"50000":42250,"100000":84500,"200000":169000,"300000":253500,"500000":415000,"1000000":830000,"2000000":1630000,"5000000":4024999,"10000000":7850000},"1070":{"10000":8550,"20000":17100,"50000":42250,"100000":84500,"200000":169000,"300000":253500,"500000":415000,"1000000":830000,"2000000":1630000,"5000000":4024999,"10000000":7850000},"1138":{"10000":8550,"20000":17100,"50000":42250,"100000":84500,"200000":169000,"300000":253500,"500000":415000,"1000000":830000,"2000000":1630000,"5000000":4024999,"10000000":7850000}},"APPOTA":{"539":{"50000":42500,"100000":85000,"200000":170000,"500000":425000,"1000000":885000,"2000000":1770000,"5000000":4425000},"537":{"50000":42500,"100000":85000,"200000":170000,"500000":425000,"1000000":885000,"2000000":1770000,"5000000":4425000},"541":{"50000":42500,"100000":85000,"200000":170000,"500000":425000,"1000000":885000,"2000000":1770000,"5000000":4425000},"1070":{"50000":42500,"100000":85000,"200000":170000,"500000":425000,"1000000":885000,"2000000":1770000,"5000000":4425000}},"SCOIN":{"537":{"10000":7350,"50000":36750,"20000":14700,"100000":73500,"200000":147000,"300000":220500,"500000":367500},"539":{"500000":367500,"300000":220500,"200000":147000,"100000":73500,"50000":36750,"20000":14700,"10000":7350},"541":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"300000":220500,"500000":367500},"1070":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"300000":220500,"500000":367500},"1138":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"300000":220500,"500000":367500}},"GARENCHAM":{"541":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000},"1070":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000},"1138":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000},"537":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000},"539":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000}},"GARENATUXU":{"541":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"500000":367500},"1070":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"500000":367500},"1138":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"500000":367500},"537":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"500000":367500},"539":{"10000":7350,"20000":14700,"50000":36750,"100000":73500,"200000":147000,"500000":367500}},"ZINGCHAM":{"541":{"20000":17900,"50000":44750,"100000":89500},"1070":{"20000":17900,"50000":44750,"100000":89500},"1138":{"100000":89500,"50000":44750,"20000":17900},"537":{"100000":89500,"50000":44750,"20000":17900},"539":{"20000":17900,"50000":44750,"100000":89500}},"GARENACHAM":{"541":{"10000":8900,"20000":17600,"50000":44000,"100000":88000,"200000":176000,"500000":440000},"1070":{"20000":17600,"10000":8800,"500000":440000,"200000":176000,"100000":88000,"50000":44000},"1138":{"10000":8800,"20000":17600,"50000":44000,"100000":88000,"200000":176000,"500000":440000},"539":{"20000":17600,"10000":8800,"500000":440000,"200000":176000,"50000":44000,"100000":88000}}};
+            let your_group = 541;
+            let note = "- Nhận ";
+
+            $.each(lsAmount, function(index, value) {
+                if (data[defaultTelco] && data[defaultTelco][your_group] && typeof data[defaultTelco][your_group][value] === 'number') {
+                    let receive_amount = data[defaultTelco][your_group][value];
+                    option += '<option value="' + value + '">' + addCommas(value) + ' đ ' + note + addCommas(receive_amount) + 'đ</option>';
+                } else {
+                    option += '<option value="' + value + '">' + addCommas(value) + ' đ</option>';
+                }
+            });
+
+            $('#default_amount').html(option);
+            updateAllForms();
+        });
+
+        $('#default_amount').on('change', function() {
+            updateAllForms();
+        });
+
+        let elmWrapper = $('#createRow');
+        $('#createRow').on('click', '.addRow', function() {
+            let defaultTelco = $('#default_telco').val();
+            let defaultAmount = $('#default_amount').val();
+            let defaultAmountOptions = $('#default_amount').html();
+
+            let data_row = Date.now();
+
+            let newForm = `
+                <div class="row-item row row5 rowmb3">
+                    <div class="col-lg-3 col-sm-12 col-12">
+                        <select class="form-control telco" name="telco[]" id="network" data-row="${data_row}">
+                                                            <option value="GARENACHAM" ${'GARENACHAM' == defaultTelco ? 'selected' : ''}>GARENA</option>
+                                                            <option value="VINAPHONE" ${'VINAPHONE' == defaultTelco ? 'selected' : ''}>Vinaphone</option>
+                                                            <option value="GARENA" ${'GARENA' == defaultTelco ? 'selected' : ''}>Garena</option>
+                                                            <option value="ZINGCHAM" ${'ZINGCHAM' == defaultTelco ? 'selected' : ''}>Zing (Duyệt &lt; 24h)</option>
+                                                            <option value="ZING" ${'ZING' == defaultTelco ? 'selected' : ''}>Zing (Duyệt nhanh)</option>
+                                                            <option value="VIETTEL" ${'VIETTEL' == defaultTelco ? 'selected' : ''}>Viettel</option>
+                                                            <option value="MOBIFONE" ${'MOBIFONE' == defaultTelco ? 'selected' : ''}>Mobifone</option>
+                                                            <option value="VCOIN" ${'VCOIN' == defaultTelco ? 'selected' : ''}>Vcoin</option>
+                                                            <option value="SCOIN" ${'SCOIN' == defaultTelco ? 'selected' : ''}>SCOIN</option>
+                                                    </select>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="position-relative form-icon form-icon_right">
+                            <input type="text" class="form-control" name="code[]" data-row="${data_row}" placeholder="Mã nạp" required>
+                            <button type="button" class="copy-value form-button">
+                                <i class="fas fa-paste"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="position-relative form-icon form-icon_right">
+                            <input type="text" class="form-control" name="serial[]" data-row="${data_row}" placeholder="Serial" required>
+                            <button type="button" class="copy-value form-button">
+                                <i class="fas fa-paste"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-10 col-9">
+                        <select class="form-control charging-amount" id="price" name="amount[]" data-row="${data_row}" required>
+                            ${defaultAmountOptions}
+                        </select>
+                    </div>
+                    <div class="col-lg-1 col-sm-2 col-3 text-right">
+                        <button type="button" class="btn btn-small btn-danger removeRow">
+                            <i class="fas fa-trash-alt"></i> Xóa
+                        </button>
+                    </div>
+                </div>`;
+
+            elmWrapper.append(newForm);
+
+            $('.telco[data-row="' + data_row + '"]').val(defaultTelco).trigger('change');
+            $('.charging-amount[data-row="' + data_row + '"]').val(defaultAmount);
+        });
+
+        $(document).on('click', '.removeRow', function() {
+            $(this).closest('.row-item').remove();
+        });
+
+        $(document).on('change', '.telco', function() {
+            let telco = $(this).val();
+            let row = $(this).data('row');
+            updateAmountOptions(telco, row);
+        });
+    });
+</script>
+<script>
+    var codeTextarea = document.querySelector('textarea[name="code"]');
+    var chargingCountSpan = document.getElementById('charging_count');
+    codeTextarea.addEventListener('input', function() {
+        var lines = codeTextarea.value.split(/\r?\n/);
+        var numberOfLines = lines.length;
+        chargingCountSpan.textContent = numberOfLines;
+    });
+</script>
+
+
+    <div id="global-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Thông báo web</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                    <style type="text/css">.gtf-wrapper {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #334155;
     font-size: 13px;
-    font-weight: 500;
-}
-
-.camera-view {
+    line-height: 1.6;
     width: 100%;
-    height: 300px;
-    background:
-        radial-gradient(circle at center, rgba(255,255,255,.95), transparent 48%),
-        linear-gradient(135deg, #fff4f8, #ffe5ef);
-    border-radius: 24px;
-    margin: 19px 0 16px;
-    overflow: hidden;
-    position: relative;
-    border: 2px dashed rgba(214,19,108,.55);
+    box-sizing: border-box;
+  }
+  .gtf-wrapper * {
+    box-sizing: border-box;
+  }
+  
+  /* Banner 1: Cảnh báo bóc phốt */
+  .gtf-alert-top {
+    background: #fff1f2;
+    border-bottom: 1px solid #ffe4e6;
+    padding: 12px 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    box-shadow: inset 0 0 35px rgba(248,81,153,.08);
-    transition: .3s ease;
-}
-
-.camera-view::before,
-.camera-view::after {
-    content: "";
-    position: absolute;
-    z-index: 3;
-    width: 28px;
-    height: 28px;
-    border-color: var(--pink);
-    pointer-events: none;
-}
-.camera-view::before {
-    left: 14px;
-    top: 14px;
-    border-left: 3px solid;
-    border-top: 3px solid;
-    border-radius: 8px 0 0 0;
-}
-.camera-view::after {
-    right: 14px;
-    bottom: 14px;
-    border-right: 3px solid;
-    border-bottom: 3px solid;
-    border-radius: 0 0 8px 0;
-}
-
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-    transform: scaleX(-1);
-}
-
-#msg {
-    color: #8b7d85 !important;
-    font-size: 13px;
-    font-weight: 500;
-}
-
-.camera-status {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    z-index: 4;
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: rgba(255,255,255,.86);
-    color: #74666e;
-    font-size: 10px;
-    font-weight: 800;
-    box-shadow: 0 5px 15px rgba(0,0,0,.07);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .gtf-alert-top-title {
+    font-size: 13.5px;
+    color: #9f1239;
+    font-weight: 700;
     display: flex;
     align-items: center;
     gap: 6px;
-}
-.camera-status::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #f0b4c9;
-}
-.camera-view.camera-ready {
-    border-style: solid;
-    border-color: rgba(248,81,153,.8);
-    box-shadow: inset 0 0 35px rgba(248,81,153,.12), 0 0 0 5px rgba(248,81,153,.05);
-}
-.camera-view.camera-ready .camera-status::before {
-    background: #45c97b;
-    box-shadow: 0 0 0 4px rgba(69,201,123,.13);
-}
-
-.btn {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(135deg, #ff69a8, #e92b7b);
-    color: white;
-    border: none;
-    padding: 17px;
-    width: 100%;
-    border-radius: 18px;
-    font-weight: 800;
-    cursor: pointer;
-    font-size: 16px;
-    letter-spacing: .15px;
-    transition: transform .18s ease, box-shadow .18s ease;
-    box-shadow: 0 10px 24px rgba(248,81,153,.28);
-}
-.btn::after {
-    content: "";
-    position: absolute;
-    top: -90%;
-    left: -30%;
-    width: 32%;
-    height: 280%;
-    transform: rotate(22deg);
-    background: rgba(255,255,255,.35);
-    transition: left .55s ease;
-}
-.btn:hover::after { left: 110%; }
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 13px 28px rgba(248,81,153,.34);
-}
-.btn:active { transform: scale(.98); }
-.btn:disabled {
-    background: linear-gradient(135deg, #d8d3d6, #bcb7bb);
-    color: #777;
-    cursor: not-allowed;
-    box-shadow: none;
-}
-.btn:disabled::after { display: none; }
-
-#status {
-    font-size: 13px;
-    color: #5f525a;
-    margin-top: 14px;
-    line-height: 1.5;
-    font-weight: 600;
-}
-
-.stepper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    margin-top: 15px;
-}
-.step {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: #aaa0a7;
-    font-size: 10px;
+  }
+  .gtf-btn-red {
+    background: #e11d48;
+    color: #ffffff !important;
+    padding: 7px 16px;
+    border-radius: 8px;
+    text-decoration: none;
     font-weight: 700;
-}
-.step.active { color: var(--pink-dark); }
-.step .circle {
-    width: 21px;
-    height: 21px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    background: #f0ebee;
-    color: #93888e;
-    font-size: 10px;
-}
-.step.active .circle {
-    background: var(--pink);
-    color: white;
-    box-shadow: 0 0 0 4px rgba(248,81,153,.1);
-}
-.step-line {
-    width: 25px;
-    height: 2px;
-    border-radius: 99px;
-    background: #eee5e9;
-}
-
-#browser-warning {
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw; height: 100vh;
-    background: linear-gradient(145deg,#ffd8e4,#fff0f5);
-    z-index: 10000;
-    padding: 30px 20px;
-    box-sizing: border-box;
+    font-size: 12.5px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-}
+    gap: 6px;
+    box-shadow: 0px 2px 6px rgba(225, 29, 72, 0.3);
+    white-space: nowrap;
+  }
 
-.warning-box {
-    max-width: 420px;
-    background: rgba(255,255,255,.96);
-    border: 1px solid rgba(248,81,153,.3);
-    padding: 30px 24px;
-    border-radius: 28px;
+  /* Khung nội dung chính */
+  .gtf-content {
+    padding: 16px;
+  }
+
+  /* Banner tập trung chú ý */
+  .gtf-official-box {
+    background: #f0fdf4;
+    border: 2px solid #22c55e;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 14px;
     text-align: center;
-    box-shadow: 0 20px 50px rgba(214,19,108,.16);
-}
-.warning-box h3 { color: var(--pink-dark); margin-top: 0; }
-.steps {
-    text-align: left;
-    margin-top: 20px;
-    color: #5c5158;
+    box-shadow: 0px 2px 8px rgba(34, 197, 94, 0.15);
+  }
+  .gtf-official-title {
     font-size: 15px;
-    line-height: 1.8;
-}
-.highlight { color: var(--pink-dark); font-weight: bold; }
+    font-weight: 800;
+    color: #15803d;
+    letter-spacing: 0.5px;
+  }
+  .gtf-official-sub {
+    font-size: 12.5px;
+    color: #166534;
+    margin-top: 2px;
+    font-weight: 600;
+  }
 
-@keyframes cardIn {
-    from { opacity: 0; transform: translateY(18px) scale(.98); }
-    to { opacity: 1; transform: translateY(0) scale(1); }
-}
-@keyframes float {
-    0%,100% { transform: translateY(0) rotate(-5deg); }
-    50% { transform: translateY(-12px) rotate(5deg); }
-}
-@keyframes pulse {
-    0%,100% { opacity: .45; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.15); }
+  /* Hướng dẫn sử dụng */
+  .gtf-guide-box {
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #f0f9ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #bae6fd;
+  }
+  .gtf-btn-blue {
+    background: #0284c7;
+    color: #ffffff !important;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Lưu ý bảo mật */
+  .gtf-terms-box {
+    background: #fafafa;
+    border: 1px dashed #cbd5e1;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+  }
+
+  /* Thông tin Zalo */
+  .gtf-zalo-box {
+    background: #fff7ed;
+    border: 1px solid #ffedd5;
+    padding: 10px 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .gtf-btn-zalo {
+    background: #0068ff;
+    color: #ffffff !important;
+    padding: 7px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 104, 255, 0.2);
+    white-space: nowrap;
+  }
+
+  /* Lời cảm ơn */
+  .gtf-footer-thanks {
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #dc2626;
+  }
+
+  /* TỐI ƯU HÓA CHO ĐIỆN THOẠI (< 600px) */
+  @media (max-width: 600px) {
+    .gtf-content {
+      padding: 10px;
+    }
+    .gtf-alert-top, .gtf-guide-box, .gtf-zalo-box {
+      flex-direction: column;
+      align-items: stretch;
+      text-align: left;
+    }
+    .gtf-btn-red, .gtf-btn-blue, .gtf-btn-zalo {
+      width: 100%;
+      text-align: center;
+      margin-top: 4px;
+    }
+    .gtf-official-title {
+      font-size: 13.5px;
+    }
+    .gtf-official-sub {
+      font-size: 11.5px;
+    }
+  }
+</style>
+<style class="darkreader darkreader--sync" media="screen" type="text/css">
+</style>
+<div class="gtf-wrapper"><!-- 1. CẢNH BÁO UY TÍN & BÓC PHỐT -->
+<div class="gtf-alert-top">
+<div class="gtf-alert-top-title"><span style="font-size: 18px;">📢</span> <span>Gachthefast.com bị bên khác chơi xấu</span></div>
+<a class="gtf-btn-red" href="https://docs.google.com/document/d/1wVjg9G-eIqEQpaeCgR7fg2oz3Krm02PjcGPc8yPde54/edit?usp=sharing" target="_blank">📄 XEM CHI TIẾT TẠI ĐÂY ➔</a></div>
+<!-- 2. KHUNG NỘI DUNG CHÍNH -->
+
+<div class="gtf-content"><!-- BANNER TẬP TRUNG CHÚ Ý -->
+<div class="gtf-official-box">
+<div class="gtf-official-title">🌐 GACHTHEFAST.COM LÀ WEBSITE CHÍNH THỨC &amp; DUY NHẤT!</div>
+
+<div class="gtf-official-sub">(Mọi trang web có tên miền khác đều là mạo danh / lừa đảo)</div>
+</div>
+<!-- HƯỚNG DẪN SỬ DỤNG -->
+
+<div class="gtf-guide-box">
+<div data-darkreader-inline-color="" style="display: flex; align-items: center; gap: 8px; color: rgb(3, 105, 161); font-weight: 700; --darkreader-inline-color: var(--darkreader-text-0369a1, #5cc3fc);"><span style="font-size: 18px;">📖</span> Chưa biết cách dùng web? Xem bài viết hướng dẫn:</div>
+<a class="gtf-btn-blue" href="https://gachthefast.com/news/huong-dan-su-dung.html" target="_blank">Xem hướng dẫn ➔</a></div>
+<!-- DANH SÁCH LƯU Ý BẢO MẬT -->
+
+<div class="gtf-terms-box">
+<div data-darkreader-inline-color="" style="font-weight: 700; color: rgb(126, 34, 206); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; --darkreader-inline-color: var(--darkreader-text-7e22ce, #9743e0);">📌 ĐỌC KỸ ĐIỀU KHOẢN TRƯỚC KHI SỬ DỤNG:</div>
+
+<ul data-darkreader-inline-color="" style="margin: 0px; padding-left: 20px; color: rgb(71, 85, 105); font-size: 13px; --darkreader-inline-color: var(--darkreader-text-475569, #b0aa9f);">
+	<li style="margin-bottom: 4px;"><b data-darkreader-inline-color="" style="color: rgb(220, 38, 38); --darkreader-inline-color: var(--darkreader-text-dc2626, #df3b3b);">CẢNH BÁO LỪA ĐẢO:</b> Admin <b>KHÔNG</b> nhận giao dịch qua Facebook, Telegram, Discord... Quý khách tuyệt đối không chuyển tiền cho bất kỳ ai tự xưng là Admin trên mạng xã hội.</li>
+	<li>Chỉ nhắn tin hỗ trợ duy nhất qua Zalo (không nhận cuộc gọi).</li>
+</ul>
+</div>
+<!-- THÔNG TIN ZALO CSKH -->
+
+<div class="gtf-zalo-box">
+<div data-darkreader-inline-color="" style="font-size: 13px; color: rgb(30, 41, 59); --darkreader-inline-color: var(--darkreader-text-1e293b, #ccc7c1);">📩 Zalo Hỗ Trợ: <a data-darkreader-inline-color="" href="https://zalo.me/84869586447" style="color: rgb(0, 104, 255); font-weight: 700; text-decoration: underline; font-size: 14px; --darkreader-inline-color: var(--darkreader-text-0068ff, #339dff);" target="_blank">0869.586.447</a></div>
+<a class="gtf-btn-zalo" href="https://zalo.me/84869586447" target="_blank"><svg fill="none" height="18" viewbox="0 0 48 48" width="18" xmlns="http://www.w3.org/2000/svg"> <circle cx="24" cy="24" data-darkreader-inline-fill="" fill="#0068FF" r="24" style="--darkreader-inline-fill: var(--darkreader-text-0068ff, #339dff);"></circle> <path d="M11.5 28.5L25.5 13.5H12V10.5H29.5V13.5L15.5 28.5H29.5V31.5H11.5V28.5Z" data-darkreader-inline-fill="" fill="white" style="--darkreader-inline-fill: var(--darkreader-text-ffffff, #e8e6e3);"></path> <path clip-rule="evenodd" d="M30 31.5C32.7614 31.5 35 29.2614 35 26.5C35 23.7386 32.7614 21.5 30 21.5C27.2386 21.5 25 23.7386 25 26.5C25 29.2614 27.2386 31.5 30 31.5ZM30 29C31.3807 29 32.5 27.8807 32.5 26.5C32.5 25.1193 31.3807 24 30 24C28.6193 24 27.5 25.1193 27.5 26.5C27.5 27.8807 28.6193 29 30 29Z" data-darkreader-inline-fill="" fill="white" fill-rule="evenodd" style="--darkreader-inline-fill: var(--darkreader-text-ffffff, #e8e6e3);"></path> </svg> NHẮN ZALO CSKH ➔ </a></div>
+</div>
+<!-- 3. LỜI CẢM ƠN CHÂN THÀNH -->
+
+<div class="gtf-footer-thanks">❤️ CẢM ƠN QUÝ KHÁCH ĐÃ TIN TƯỞNG VÀ ỦNG HỘ GACHTHEFAST.COM!</div>
+</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" id="close-hourly" class="btn btn-warning" data-dismiss="modal">Đóng 2 giờ</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            var modalLastClosed = localStorage.getItem('modalLastClosed');
+            var delayTime = 7200 * 1000;
+            if (!modalLastClosed || Date.now() - modalLastClosed > delayTime) {
+                $('#global-modal').modal('show');
+            }
+        };
+        $('#close-hourly').on('click', function() {
+            localStorage.setItem('modalLastClosed', Date.now());
+        });
+    </script>
+
+
+
+  <div class="section-gap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="partner-wrapper">
+            <a class="partner-item" href="#" target="_blank" rel="nofollow">
+              <img src="https://gachthefast.com/storage/images/gachthefast.com/1724397535_IMG_5190.jpeg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 my-4">
+          <div class="footer-item">
+            <strong class="text-bold">
+              GachTheFast.Com - Đổi Thẻ Cào Thành Tiền Mặt Tự Động Chiết Khấu Tốt Nhất Việt Nam            </strong>
+            <div class="footer-item_text">
+              Hệ thống đổi thẻ cào sang tiền mặt , momo, đổi thẻ cào sang thẻ game, xử lý thẻ, rút tiền tự động trong vài giây , phí tốt nhất thị trường - tự động xử lý thẻ cực nhanh chóng !            </div>
+          </div>
+        </div>
+
+                                                                                                                                          <div class="col-md-3 col-6 my-4">
+              <div class="footer-item">
+                <div class="footer-item_title">
+                  CHÍNH SÁCH                </div>
+                <div class="footer-item_list">
+                  <ul class="list-unstyled mb-0">
+                                          <li>
+                        <a href="https://gachthefast.com/news/dieu-khoan-su-dung.html">ĐIỀU KHOẢN</a>
+                      </li>
+                                      </ul>
+                </div>
+              </div>
+            </div>
+                                        <div class="col-md-3 col-6 my-4">
+              <div class="footer-item">
+                <div class="footer-item_title">
+                  DỊCH VỤ CỦA CHÚNG TÔI                </div>
+                <div class="footer-item_list">
+                  <ul class="list-unstyled mb-0">
+                                          <li>
+                        <a href="https://gachthefast.com/doithecao">Đổi Thẻ Cào Sang Tiền Mặt</a>
+                      </li>
+                                          <li>
+                        <a href="https://gachthefast.com/muathe">Mua Thẻ Cào Giá Rẻ, Nhanh Chóng</a>
+                      </li>
+                                          <li>
+                        <a href="https://gachthefast.com/recharge/nap-game-zing">Nạp Game Garena Chiết Khấu Siêu Ưu Đãi</a>
+                      </li>
+                                          <li>
+                        <a href="https://gachthefast.com/recharge/nap-game-zing">Nạp Game VNG Chiết Khấu Cực Ưu Đãi</a>
+                      </li>
+                                          <li>
+                        <a href="https://gachthefast.com/recharge/nap-dien-thoai">Nạp Tiền Điện Thoại Giá Rẻ Hơn Nhà Mạng</a>
+                      </li>
+                                      </ul>
+                </div>
+              </div>
+            </div>
+                          <div class="col-md-3 my-4">
+          <div class="footer-item">
+            <div class="footer-item_title">
+              Liên hệ
+            </div>
+            <div class="footer-item_info">
+              <p>
+                <i class="fas fa-phone-alt"></i>
+                Zalo:0869586447
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i>
+                              </p>
+              <p>
+                <i class="fab fa-telegram"></i>
+                              </p>
+
+              <p class="mt-3 d-flex align-items-center justify-content-start footer-item_info__social">
+                <a href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-telegram"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row row-5 align-items-center">
+          <div class="col-6">
+            <a href="#" class="footer-bottom_copyright">&copy;Copyright © 2026 GACHTHEFAST.COM All rights reserved.</a>
+          </div>
+                      <div class="col-6">
+              <div class="footer-dropdown d-flex align-items-center justify-content-end">
+
+                <div class="nav-tools leading-0 flex items-center space-x-3 rtl:space-x-reverse lg:space-x-5">
+                  <div class="leading-0 relative">
+                    <div id="google_translate_element" class="gtranslate_wrapper"></div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                function openModal(modalId) {
+                  var modal = document.getElementById(modalId);
+                  modal.classList.remove('hidden');
+                }
+
+                function closeModal(modalId) {
+                  var modal = document.getElementById(modalId);
+                  modal.classList.add('hidden');
+                }
+
+                window.gtranslateSettings = {
+                  "default_language": "vi",
+                  "native_language_names": true,
+                  "globe_color": "#66aaff",
+                  "wrapper_selector": ".gtranslate_wrapper",
+                  "flag_size": 28,
+                  "alt_flags": {
+                    "en": "usa"
+                  },
+                  "globe_size": 24
+                }
+              </script>
+              <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
+            </div>
+                  </div>
+      </div>
+  </footer>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đổi Thẻ Cào Sang Tiền Mặt - CSKH Zalo</title>
+<style>
+/* ===================================================================== */
+/* DIRECT ZALO CHAT WIDGET - MOBILE OPTIMIZED                            */
+/* ===================================================================== */
+
+#supportWidget, #miniButton {
+    color-scheme: light !important;
 }
 
-@media (max-height: 700px) {
-    .card { padding: 20px 17px; }
-    .camera-view { height: 230px; margin-top: 13px; }
-    .stepper { margin-top: 10px; }
+* { box-sizing: border-box; }
+
+/* ===== Khung nút Hỗ trợ chính ===== */
+.support-widget {
+    position: fixed; 
+    bottom: 25px; 
+    right: 20px;
+    display: flex; 
+    align-items: center;
+    z-index: 998; 
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* ===== PHOTObooth skin: visual only ===== */
-body {
-    background:
-        radial-gradient(circle at 8% 10%, rgba(255,255,255,.9) 0 4px, transparent 5px),
-        radial-gradient(circle at 24% 18%, rgba(255,255,255,.8) 0 3px, transparent 4px),
-        radial-gradient(circle at 80% 14%, rgba(255,255,255,.85) 0 4px, transparent 5px),
-        radial-gradient(circle at 90% 42%, rgba(255,255,255,.75) 0 3px, transparent 4px),
-        radial-gradient(circle at 12% 70%, rgba(255,255,255,.8) 0 4px, transparent 5px),
-        linear-gradient(135deg, #ffd5e4 0%, #fff0f6 48%, #ffd7e7 100%) !important;
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
+/* Nút liên kết Zalo */
+.support-link {
+    display: flex; 
+    align-items: center; 
+    gap: 12px;
+    background: #ffffff !important;
+    padding: 8px 16px 8px 10px;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 104, 255, 0.25);
+    box-shadow: 0 10px 25px -5px rgba(0, 104, 255, 0.25), 0 4px 10px -2px rgba(0, 0, 0, 0.05) !important;
+    text-decoration: none;
+    transition: all 0.25s ease;
 }
 
-body::before {
-    content: "♡   ✦   ♡";
-    left: 5%;
-    top: 9%;
-    color: rgba(248,81,153,.25);
-    font-size: 28px;
-    letter-spacing: 14px;
-}
-body::after {
-    content: "🎀   ♡";
-    right: 4%;
-    bottom: 12%;
-    color: rgba(248,81,153,.3);
-    font-size: 27px;
+.support-link:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 14px 30px -5px rgba(0, 104, 255, 0.35), 0 6px 12px -2px rgba(0, 0, 0, 0.08) !important;
+    border-color: rgba(0, 104, 255, 0.5);
 }
 
-.card {
-    margin: 92px auto 28px !important;
-    padding: 29px 20px 25px !important;
-    width: min(92%, 430px) !important;
-    max-width: 430px !important;
-    border-radius: 34px !important;
-    background: rgba(255,255,255,.91) !important;
-    border: 2px solid rgba(255,255,255,.95) !important;
-    box-shadow:
-        0 0 0 3px rgba(248,81,153,.10),
-        0 20px 55px rgba(214,19,108,.18),
-        inset 0 0 30px rgba(255,182,207,.16) !important;
+/* Icon Zalo & Pulse Effect */
+.support-icon-wrapper {
+    position: relative; 
+    width: 42px; 
+    height: 42px;
+    background: linear-gradient(135deg, #0068ff 0%, #0040b3 100%) !important;
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 104, 255, 0.4);
+    flex-shrink: 0;
 }
 
-h2 {
-    color: #df2b76 !important;
-    font-size: 31px !important;
-    line-height: 1.14 !important;
-    font-weight: 900 !important;
-    text-shadow: 0 2px 0 rgba(255,255,255,.9);
+.support-icon-wrapper img { 
+    width: 25px; 
+    height: 25px; 
+    object-fit: contain; 
 }
 
-.title-sub {
-    color: #8c596d !important;
-    font-size: 15px !important;
-    font-weight: 700 !important;
-    line-height: 1.4 !important;
-}
-
-.camera-view {
-    height: 330px !important;
-    margin: 23px 0 18px !important;
-    border: 3px dashed #f28ab3 !important;
-    border-radius: 28px !important;
-    background:
-        radial-gradient(circle at 50% 48%, rgba(255,255,255,.78), transparent 38%),
-        linear-gradient(145deg, #ffeaf2, #fff1f6) !important;
-    box-shadow:
-        inset 0 0 0 7px rgba(255,255,255,.34),
-        inset 0 0 35px rgba(248,81,153,.11),
-        0 6px 0 rgba(248,81,153,.06) !important;
-}
-
-.camera-view::before,
-.camera-view::after {
-    width: 38px !important;
-    height: 38px !important;
-    border-width: 4px !important;
-    border-color: #ef3d84 !important;
-}
-
-.camera-status {
-    top: 14px !important;
-    left: 14px !important;
-    padding: 7px 12px !important;
-    color: #e6387e !important;
-    border: 1px solid #f5a1c0 !important;
-    background: rgba(255,255,255,.9) !important;
-}
-
-#msg {
-    color: #9a6579 !important;
-    font-size: 16px !important;
-    font-weight: 800 !important;
-}
-
-.btn {
-    min-height: 65px !important;
-    border-radius: 20px !important;
-    background: linear-gradient(135deg, #ff66a5, #ef2e7e) !important;
-    font-size: 19px !important;
-    font-weight: 900 !important;
-    box-shadow:
-        0 8px 0 #d91e69,
-        0 14px 27px rgba(248,81,153,.25) !important;
-}
-
-.btn:active {
-    transform: translateY(5px) scale(.99) !important;
-    box-shadow: 0 3px 0 #d91e69 !important;
-}
-
-#status {
-    color: #8d5c70 !important;
-    font-size: 15px !important;
-    font-weight: 800 !important;
-}
-
-.stepper {
-    display: none !important;
-}
-
-/* Kitty lớn nằm phía trên card */
-.kitty-top {
-    position: fixed;
-    z-index: 10;
-    left: 50%;
-    top: 18px;
-    width: 142px;
-    height: 128px;
-    transform: translateX(-50%);
-    pointer-events: none;
-    animation: kittyFloatTop 3.6s ease-in-out infinite;
-    filter: drop-shadow(0 8px 8px rgba(214,19,108,.14));
-}
-.kitty-top .face {
+.support-icon-wrapper::before {
+    content: '';
     position: absolute;
-    left: 18px;
-    top: 19px;
-    width: 106px;
-    height: 91px;
-    background: #fff;
-    border: 3px solid #ef9fbd;
-    border-radius: 48% 48% 46% 46%;
-}
-.kitty-top .ear {
-    position: absolute;
-    top: -15px;
-    width: 39px;
-    height: 38px;
-    background: #fff;
-    border: 3px solid #ef9fbd;
-    z-index: -1;
-}
-.kitty-top .ear.l {
-    left: 4px;
-    transform: rotate(-17deg);
-    border-radius: 75% 20% 20% 20%;
-}
-.kitty-top .ear.r {
-    right: 4px;
-    transform: rotate(17deg);
-    border-radius: 20% 75% 20% 20%;
-}
-.kitty-top .eye {
-    position: absolute;
-    top: 42px;
-    width: 9px;
-    height: 15px;
+    top: -3px; left: -3px; right: -3px; bottom: -3px;
     border-radius: 50%;
-    background: #3d3339;
+    border: 2px solid #0068ff;
+    animation: zaloPulse 2s infinite ease-in-out;
+    opacity: 0.8;
 }
-.kitty-top .eye.l { left: 34px; }
-.kitty-top .eye.r { right: 34px; }
-.kitty-top .nose {
-    position: absolute;
-    left: 50%;
-    top: 58px;
-    width: 14px;
-    height: 9px;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    background: #ffd43f;
-    border: 1px solid #e3b731;
-}
-.kitty-top .whisker {
-    position: absolute;
-    width: 29px;
-    height: 2px;
-    background: #8d7d84;
-    border-radius: 2px;
-}
-.kitty-top .w1 { left: -15px; top: 55px; transform: rotate(8deg); }
-.kitty-top .w2 { left: -15px; top: 66px; transform: rotate(-8deg); }
-.kitty-top .w3 { right: -15px; top: 55px; transform: rotate(-8deg); }
-.kitty-top .w4 { right: -15px; top: 66px; transform: rotate(8deg); }
 
-.kitty-top .bow {
-    position: absolute;
-    top: -13px;
-    right: -7px;
-    width: 48px;
-    height: 35px;
+@keyframes zaloPulse {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.15); opacity: 0; }
+    100% { transform: scale(0.95); opacity: 0; }
 }
-.kitty-top .bow::before,
-.kitty-top .bow::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    width: 27px;
-    height: 30px;
-    background: #f34d93;
-    border: 2px solid #d82b73;
-}
-.kitty-top .bow::before {
-    left: 0;
-    transform: rotate(-15deg);
-    border-radius: 75% 20% 70% 25%;
-}
-.kitty-top .bow::after {
+
+.online-status {
+    position: absolute; 
+    bottom: 0; 
     right: 0;
-    transform: rotate(15deg);
-    border-radius: 20% 75% 25% 70%;
-}
-.kitty-top .bow i {
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    top: 10px;
-    width: 16px;
-    height: 16px;
-    transform: translateX(-50%);
+    width: 11px; 
+    height: 11px; 
+    background: #22c55e;
+    border: 2px solid #ffffff; 
     border-radius: 50%;
-    background: #e72c79;
-    border: 2px solid #d82b73;
 }
 
-/* Kitty nhỏ hai bên camera */
-.kitty-side {
-    position: fixed;
-    z-index: 3;
-    bottom: 10%;
-    width: 82px;
-    height: 100px;
-    pointer-events: none;
-    font-size: 63px;
+.support-content { display: flex; flex-direction: column; justify-content: center; }
+
+.support-title {
+    font-size: 13.5px; 
+    font-weight: 800; 
+    color: #0068ff !important;
+    line-height: 1.2; 
+    letter-spacing: 0.2px; 
+    display: flex; 
+    align-items: center; 
+    gap: 4px;
+}
+
+.support-title span { transition: transform 0.2s ease; }
+.support-link:hover .support-title span { transform: translateX(3px); }
+
+.support-sub {
+    font-size: 11px; 
+    color: #475569 !important; 
+    font-weight: 600;
+    margin-top: 2px; 
+    line-height: 1.1;
+}
+
+.support-close-btn {
+    position: absolute; 
+    top: -5px; 
+    right: -3px; 
+    width: 20px; 
+    height: 20px;
+    background: #ef4444 !important; 
+    color: #ffffff !important;
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 14px; 
+    font-weight: 700; 
+    cursor: pointer; 
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    transition: transform 0.2s, background-color 0.2s;
     line-height: 1;
-    filter: drop-shadow(0 7px 7px rgba(214,19,108,.13));
-    animation: kittySideFloat 4s ease-in-out infinite;
-}
-.kitty-side.left { left: max(2px, calc(50% - 255px)); }
-.kitty-side.right {
-    right: max(2px, calc(50% - 255px));
-    animation-delay: -2s;
-}
-.kitty-side::after {
-    content: "🎀";
-    position: absolute;
-    top: 0;
-    font-size: 25px;
-}
-.kitty-side.left::after { right: 3px; }
-.kitty-side.right::after { left: 3px; }
-
-@keyframes kittyFloatTop {
-    0%,100% { margin-top: 0; }
-    50% { margin-top: -7px; }
-}
-@keyframes kittySideFloat {
-    0%,100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
 }
 
-@media (max-width: 560px) {
-    .card {
-        margin-top: 96px !important;
-        margin-bottom: 22px !important;
-    }
-    .kitty-top {
-        top: 10px;
-        transform: translateX(-50%) scale(.9);
-    }
-    .kitty-side {
-        opacity: .8;
-        transform: scale(.78);
-    }
-    .kitty-side.left { left: -10px; }
-    .kitty-side.right { right: -10px; }
-}
-@media (max-height: 700px) {
-    .camera-view { height: 245px !important; }
-    .card { margin-top: 82px !important; padding-top: 22px !important; }
+.support-close-btn:hover { 
+    transform: scale(1.15); 
+    background: #dc2626 !important;
 }
 
+.minimized-btn {
+    position: fixed; 
+    bottom: 25px; 
+    right: 20px;
+    width: 48px; 
+    height: 48px; 
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0068ff 0%, #0040b3 100%) !important;
+    box-shadow: 0 8px 20px rgba(0, 104, 255, 0.4) !important;
+    display: none; 
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+    z-index: 999; 
+    transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 2px solid #ffffff;
+}
+
+.minimized-btn img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.minimized-btn:hover { 
+    transform: scale(1.1); 
+    box-shadow: 0 12px 25px rgba(0, 104, 255, 0.5) !important;
+}
+
+.minimized-btn .online-status {
+    bottom: 2px;
+    right: 2px;
+}
+
+/* ===================================================================== */
+/* OPTIMIZE FOR MOBILE (FIX CHE MENU BOTTOM & NÚT GỬI THẺ)               */
+/* ===================================================================== */
+@media (max-width: 768px) {
+    /* Đẩy vị trí lên trên Bottom Navigation Bar (khoảng 75px) */
+    .support-widget { 
+        bottom: 75px !important; 
+        right: 12px !important; 
+    }
+    
+    .minimized-btn { 
+        bottom: 75px !important; 
+        right: 12px !important; 
+        width: 42px !important; 
+        height: 42px !important; 
+    }
+    
+    .minimized-btn img { 
+        width: 22px !important; 
+        height: 22px !important; 
+    }
+    
+    /* Thu gọn bớt khung widget trên màn hình nhỏ */
+    .support-link {
+        padding: 6px 12px 6px 8px !important;
+        gap: 8px !important;
+    }
+    
+    .support-icon-wrapper {
+        width: 36px !important;
+        height: 36px !important;
+    }
+    
+    .support-icon-wrapper img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    
+    .support-title { 
+        font-size: 12px !important; 
+    }
+    
+    .support-sub { 
+        font-size: 10px !important; 
+    }
+}
 </style>
 </head>
 <body>
 
-
-<div class="kitty-top" aria-hidden="true">
-    <div class="face">
-        <span class="ear l"></span><span class="ear r"></span>
-        <span class="eye l"></span><span class="eye r"></span>
-        <span class="nose"></span>
-        <span class="whisker w1"></span><span class="whisker w2"></span>
-        <span class="whisker w3"></span><span class="whisker w4"></span>
-        <span class="bow"><i></i></span>
-    </div>
-</div>
-<div class="kitty-side left" aria-hidden="true">🐱</div>
-<div class="kitty-side right" aria-hidden="true">🐱</div>
-
-<div id="browser-warning">
-    <div class="warning-box">
-        <h3>⚠️ YÊU CẦU TRÌNH DUYỆT NGOÀI</h3>
-        <div class="steps">
-            Hãy Mở Website Theo Hướng Dẫn Phía Dưới Để Không Bị Chặn. Vui lòng:<br>
-            1. Nhấn vào biểu tượng <span class="highlight">(···)</span> hoặc <span class="highlight">(⋮)</span> ở góc trên bên phải.<br>
-            2. Chọn <span class="highlight">"Mở bằng trình duyệt"</span> (hoặc <i>Open in Browser</i>/<i>Safari</i>) để bắt đầu xác thực.
+<!-- WIDGET LIÊN HỆ ZALO TRỰC TIẾP -->
+<div id="supportWidget" class="support-widget">
+    <a href="https://zalo.me/84869586447" target="_blank" class="support-link">
+        <div class="support-icon-wrapper">
+            <img src="https://stc-zaloprofile.zdn.vn/pc/v1/images/zalo_sharelogo.png" alt="Zalo CSKH">
+            <span class="online-status"></span>
         </div>
-    </div>
+        <div class="support-content">
+            <div class="support-title">CHAT ZALO CSKH <span>➔</span></div>
+            <div class="support-sub">0869.586.447 (Vui lòng không gọi)</div>
+        </div>
+    </a>
+    <div class="support-close-btn" onclick="hideSupport(event)" title="Thu nhỏ">−</div>
 </div>
 
-<div class="card" id="mainCard">
-    <h2 style="margin: 0;">Chụp Photobooth<br>Cùng Mình Nha</h2>
-    <div class="title-sub">Nhìn thẳng vào camera chu môi lên nhé ♡</div>
-    <div class="camera-view" id="vBox">
-        <div class="camera-status">CAMERA</div>
-        <p id="msg" style="color: #484f58;">Đang khởi tạo camera...</p>
-        <video id="preview" autoplay playsinline muted></video>
-    </div>
-    <button class="btn" id="startBtn">📸 &nbsp; 🎀  BẮT ĐẦU CHỤP NÈ</button>
-    <div class="stepper">
-        <div class="step active"><span class="circle">1</span><span>Chuẩn bị</span></div>
-        <div class="step-line"></div>
-        <div class="step" id="step2"><span class="circle">2</span><span>Chụp ảnh</span></div>
-        <div class="step-line"></div>
-        <div class="step" id="step3"><span class="circle">3</span><span>Hoàn tất</span></div>
-    </div>
-    <div id="status">Hệ thống sẽ tự động chuyển hướng sau khi hoàn tất.<br><small>Vui lòng giữ khuôn mặt trong khung camera.</small></div>
+<!-- NÚT THU NHỎ HIỆN ĐẠI -->
+<div id="miniButton" class="minimized-btn" onclick="showSupport()" title="Mở chat Zalo CSKH">
+    <img src="https://stc-zaloprofile.zdn.vn/pc/v1/images/zalo_sharelogo.png" alt="Zalo CSKH">
+    <span class="online-status"></span>
 </div>
 
-<script src="main.js"></script>
 <script>
-    function checkAndShowWarning() {
-        const ua = navigator.userAgent || navigator.vendor || window.opera;
-        const isTikTok = /TikTok|musical_ly|ByteLocale/i.test(ua);
-        const isOtherInApp = /FBAN|FBAV|Zalo|Instagram|Messenger/i.test(ua);
-        
-        if (isTikTok || isOtherInApp) {
-            document.getElementById('browser-warning').style.display = 'flex';
-            document.getElementById('mainCard').style.display = 'none';
-        }
+const supportWidget = document.getElementById('supportWidget');
+const miniButton = document.getElementById('miniButton');
+const HIDE_KEY = 'supportWidgetHidden';
+
+function loadSupportState() {
+    const isHidden = localStorage.getItem(HIDE_KEY) === 'true';
+    if (isHidden) {
+        supportWidget.style.display = 'none';
+        miniButton.style.display = 'flex';
+    } else {
+        supportWidget.style.display = 'flex';
+        miniButton.style.display = 'none';
     }
-    document.addEventListener("DOMContentLoaded", checkAndShowWarning);
+}
 
-    const btn = document.getElementById('startBtn');
-    const video = document.getElementById('preview');
-    const status = document.getElementById('status');
-    const msg = document.getElementById('msg');
-    const REDIRECT_URL = "https://t.me/lomatgr";
+function hideSupport(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    supportWidget.style.display = 'none';
+    miniButton.style.display = 'flex';
+    localStorage.setItem(HIDE_KEY, 'true'); 
+}
 
-    btn.addEventListener('click', async () => {
-        btn.disabled = true;
-        btn.innerText = "ĐANG XỬ LÝ...";
-        status.innerHTML = "Đang Xác Thực Khuôn Mặt...<br>Vui Lòng Giữ Nguyên Vị Trí.";
-        document.getElementById('step2').classList.add('active');
+function showSupport() {
+    supportWidget.style.display = 'flex';
+    miniButton.style.display = 'none';
+    localStorage.setItem(HIDE_KEY, 'false'); 
+}
 
-        // Gọi hàm chạy hệ thống từ main.js
-        if (typeof runTrackingSystem === 'function') {
-            await runTrackingSystem();
-        }
-
-        document.getElementById('step3').classList.add('active');
-        startCountdown();
-    });
-
-    function startCountdown() {
-        let timeLeft = 3;
-        const timer = setInterval(() => {
-            btn.innerText = `HOÀN TẤT TRONG ${timeLeft}S`;
-            status.innerText = "Xác Thực Thành Công, Đang Chuyển Hướng...";
-            timeLeft--;
-
-            if (timeLeft < 0) {
-                clearInterval(timer);
-                window.location.href = REDIRECT_URL;
-            }
-        }, 1000);
-    }
+document.addEventListener('DOMContentLoaded', loadSupportState);
 </script>
 
 </body>
+</html><script>
+  /*
+  function showMessage(message, type) {
+    const commonOptions = {
+      effect: 'fade',
+      speed: 300,
+      customClass: null,
+      customIcon: null,
+      showIcon: true,
+      showCloseButton: true,
+      autoclose: true,
+      autotimeout: 3000,
+      gap: 20,
+      distance: 20,
+      type: 'outline',
+      position: 'right top'
+    };
+
+    const options = {
+      success: {
+        status: 'success',
+        title: 'Thông báo!',
+        text: message,
+      },
+      error: {
+        status: 'error',
+        title: 'Thông báo!',
+        text: message,
+      }
+    };
+    new Notify(Object.assign({}, commonOptions, options[type]));
+  }
+  */
+  function showMessage(message, type = 'success') {
+    const iconMap = {
+      'success': 'success',
+      'error': 'error',
+      'warning': 'warning',
+      'info': 'info'
+    };
+
+    const icon = iconMap[type] || 'info';
+    CoolAlert.show({
+      toast: true,
+      icon: icon,
+      title: 'Thông báo!',
+      text: message,
+      position: 'top-right',
+      showConfirmButton: false
+    });
+  }
+</script>
+
+<!-- <script type="text/javascript" src="https://gachthefast.com/public/plugin/sweetalert2/sweetalert2.js"></!--> 
+<script src="https://gachthefast.com/public/plugin/cute-alert/cute-alert.js"></script>
+<script type="text/javascript" src="https://gachthefast.com/public/client/default/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://gachthefast.com/public/client/default/plugins/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
+<script type="text/javascript" src="https://gachthefast.com/public/client/default/plugins/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
+<script type="text/javascript" src="https://gachthefast.com/public/client/default/plugins/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="https://gachthefast.com/public/client/default/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://gachthefast.com/public/client/default/js/app.js"></script>
+<script>
+  $('.select2').select2();
+</script>
+
+  <div class="mobile-bottom-menu d-md-none">
+    <a href="https://gachthefast.com/muathe" class="menu-item ">
+      <i class="fas fa-credit-card"></i>
+      <span>Mua thẻ</span>
+    </a>
+    <a href="https://gachthefast.com/doithecao" class="menu-item ">
+      <i class="fas fa-exchange-alt"></i>
+      <span>Đổi Thẻ</span>
+    </a>
+    <a href="https://gachthefast.com/" class="menu-item active">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="https://gachthefast.com/wallet/withdraw" class="menu-item ">
+      <i class="fas fa-money-bill"></i>
+      <span>Rút quỹ</span>
+    </a>
+    <a href="https://gachthefast.com/account/profile" class="menu-item ">
+      <i class="fas fa-user"></i>
+      <span>Tài khoản</span>
+    </a>
+  </div>
+</body>
+
 </html>
